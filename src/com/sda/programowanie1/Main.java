@@ -19,7 +19,9 @@ public class Main {
     lista.add("Mak");
 
 
-
+    for (int i = 0; i < lista.size(); i++){
+        System.out.println(lista.get(i));
+    }
 
     }
 }

@@ -1,5 +1,7 @@
 package com.sda.programowanie1;
 
+import java.util.Arrays;
+
 //todo implementacja wlasnej ArrayListy
 public class CustomList <E> {
 
@@ -26,8 +28,20 @@ public void resize(){
         tmp[i] = elements[i];
     }
     elements = tmp;
+
+    //todo inne rozwiazanie    elements = Arrays.copyOf(elements,newSize);
+
 }
 
+    public E get(int i){
+    if(i>=size || i < 0){
+        throw new IndexOutOfBoundsException("Nie ma takiego elementu");
+    }
+    return (E) elements[i];
+    }
 
+    public int size(){
+    return  size;
+    }
 
 }
