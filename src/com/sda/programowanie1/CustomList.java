@@ -40,8 +40,17 @@ public void resize(){
     return (E) elements[i];
     }
 
+
+    public void remove (int index){
+    //miejsce w tablicy ktore usuwamy
+        for (int i = index -1; i < size; i++){
+            elements[i] = elements [i + 1];
+        }
+        size --;
+    }
+
     public int size(){
-    return  size;
+        return  size;
     }
 
 }

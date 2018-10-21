@@ -20,7 +20,7 @@ public class Main {
 
 
     for (int i = 0; i < lista.size(); i++){
-        System.out.println(lista.get(i));
+        System.out.println((i + 1)+ "\t" + lista.get(i));
     }
 
     }
